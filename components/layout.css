@@ -1,0 +1,10 @@
+.sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    /* Add your additional styling for the sidebar */
+  }
+  
+  .content {
+    margin-left: 200px; /* Adjust this value based on your sidebar width */
+    /* Add your additional styling for the main content */
+  }
