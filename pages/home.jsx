@@ -1,28 +1,31 @@
 import React from "react";
-import LayOut from "../components/Layout";
-import Sidebar from "../components/Sidebar";
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/router";
+
 
 const Home = () => {
-  const { data: session, status } = useSession();
-  const router = useRouter();
-
-  if (status === "loading") {
-    return <h1>Loading...</h1>;
-  }
-
-  if (status === "unauthenticated") {
-    // Redirect the user to the sign-in page
-    router.push("/auth/signin");
-    return null;
-  }
+  
+ 
 
   return (
     <div>
-      <LayOut>
-        <div style={{ margin: "100px", color: "red" }}>fnfkks</div>
-      </LayOut>
+     <head>
+
+     </head>
+     <body>
+      <section>
+        <div className="container lg-container">
+<div className="flex-row">
+  <div className="logo navbar-brand"></div>
+<a> <img src="https://mainimageservice.azureedge.net/00-tup-web/images/logo/skin1-logo.png" alt="Travelup"></img></a>
+</div>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+
+     </body>
     </div>
   );
 };
